@@ -1,0 +1,41 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/* h1, h2, h3 {
+    font-family: Quicksand, sans-serif !important;
+}
+
+span, p, textarea, input, h4, h5, h6 {
+    font-family: Roboto, serif !important;
+    font-weight: 300;
+}
+
+textarea, input {
+    font-family: Roboto, serif !important;
+    font-weight: 400;
+} */
+
+/* textarea, input::placeholder {
+    color: #999999;
+    font-weight: 200;
+}
+
+textarea, input:-ms-input-placeholder { /* Internet Explorer 10-11 * /
+    color: #999999;
+    font-weight: 200;
+}
+
+textarea, input::-ms-input-placeholder { /* Microsoft Edge * /
+    color: #999999;
+    font-weight: 200;
+}
+
+:root {
+    --lasting-sales-gradient: linear-gradient(#68cafe, #d028fe);
+} */
+
+label{margin-bottom: 0.5rem;}
+.form-control{height: calc(1.5em + 0.75rem + 2px);}
+.form-group{margin-bottom: 1rem;}
+.btn-block{display: block;width: 100%;}
