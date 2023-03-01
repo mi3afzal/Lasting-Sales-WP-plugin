@@ -3,9 +3,9 @@
 
 $form_email = isset($_POST['form_email']) ? sanitize_email($_POST['form_email']) : null;
 $form_token = isset($_POST['form_token']) ? sanitize_text_field($_POST['form_token']) : null;
-$form_deals = isset($_POST['form_deals']) ? $_POST['form_deals'] : 0;
-$form_wf_id = isset($_POST['form_wf_id']) ? $_POST['form_wf_id'] : 0;
-$form_wfs_id = isset($_POST['form_wfs_id']) ? $_POST['form_wfs_id'] : 0;
+$form_deals = isset($_POST['form_deals']) ? sanitize_text_field($_POST['form_deals']) : 0;
+$form_wf_id = isset($_POST['form_wf_id']) ? sanitize_text_field($_POST['form_wf_id']) : 0;
+$form_wfs_id = isset($_POST['form_wfs_id']) ? sanitize_text_field($_POST['form_wfs_id']) : 0;
 
 if (isset($form_email) && isset($form_token)){
     save_lasting_sales_config_in_db($form_email, $form_token, $form_deals, $form_wf_id, $form_wfs_id);
