@@ -168,8 +168,8 @@ function render_admin_page() {
         }
 
         var workflow_data = '';
-        var selected_workflow_id = '<?php echo isset($lasting_config['workflow_id']) ? $lasting_config['workflow_id'] : '0'; ?>';
-        var selected_workflow_stage_id = '<?php echo isset($lasting_config['workflow_stage_id']) ? $lasting_config['workflow_stage_id'] : '0'; ?>';
+        var selected_workflow_id = '<?php echo isset($lasting_config['workflow_id']) ? absint($lasting_config['workflow_id']) : '0'; ?>';
+        var selected_workflow_stage_id = '<?php echo isset($lasting_config['workflow_stage_id']) ? absint($lasting_config['workflow_stage_id']) : '0'; ?>';
         function get_workflows(){
             let token = jQuery("#token").val();
             if (token == '') return false;
